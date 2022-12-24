@@ -1,0 +1,5 @@
+cursor above        ctrl + alt + uparrow
+cursor below        ctrl + alt + downarrow
+copy line above     shift + alt + uparrow
+copy line below     shift + alt + downarrow
+delete line         ctrl + shift + k

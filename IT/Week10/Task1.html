@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    
+</head>
+    <style>
+         *{
+            box-sizing: border-box;
+        }
+        #main{
+            width:350px;
+            height:400px;
+			position:relative;
+            
+        }
+        .col1{
+            width: 150px;
+            height: 40px;
+            padding: 5px;
+            position: relative;
+            text-align: center;
+            border-style: double;
+        }
+        .col2{
+            width: 100px;
+            height: 40px;
+            padding: 5px;
+            text-align: center;
+            position: relative;
+            border-style: double;
+            left: 150px;
+            top: -40px;
+        }
+        .col3{
+            text-align: center;
+            width: 100px;
+            height: 40px;
+            padding: 5px;
+            position: relative;
+            border-style: double;
+            left: 250px;
+            top: -80px;
+        }
+        .olist{
+            width: 150px;
+            height: 200px;
+            position: relative;
+            padding: 5px;
+            border-style: double;
+            background-color: rgb(100, 210, 214);
+            top: -80px;
+        }
+        .b{
+            width: 100px;
+            height: 35px;
+            position: relative;
+            border-style: double;
+            left: 142px;
+            top: -155px;
+            background-color: yellow;
+            text-align: right;
+            padding: 5px;
+        }
+        .c{
+            width: 100px;
+            height: 35px;
+            position: relative;
+            border-style: double;
+            background-color: red;
+            text-align: center;
+            padding: 5px;
+            left: 242px;
+            top: -190px;
+        }
+        .ulist{
+            width: 200px;
+            height: 165px;
+            position: relative;
+            border-style: inherit;
+            background-color: green;
+            padding: 5px;
+            left:142px;
+            top: -190px;
+        }
+    </style>
+<body>
+    <div id="main">
+        <div class="col1">Column 1</div>
+        <div class="col2">Column 2</div>
+        <div class="col3">Column 3</div>
+        <div class="olist">A numbered list
+            <ol> 
+                <li>Able</li>
+                <li>Baker</li>
+                <li>Charlie</li>
+                <li>Delta</li>
+                <li>Echo</li>
+            </ol>
+            <div class="b">B</div>
+            <div class="c">C</div>
+            <div class="ulist">
+                Unnumbered list
+                <ul>
+                    <li>Pounds</li>
+                    <li>Dollars</li>
+                    <li>Euro</li>
+                    <li>Yen</li>
+                    <li>Roubles</li>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    #container{
+        width: 1140px;
+        /* min-height: 800px; */
+        margin: auto auto;
+    }
+    /* body{
+        background-color: rgb(30, 30, 63);
+    } */
+    .nav{
+        overflow:hidden;
+        background-color:rgb(67, 54, 51);
+    }
+    .nav a{
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+    }
+    .nav a:hover{
+        color: rgb(143, 133, 125);
+    }
+    .header{
+        padding: 30px ;
+        overflow: hidden;
+        text-align: center;
+        background-color: rgb(92, 85, 82);
+        color: white;
+    }
+    .form{
+        position: absolute;
+        left: 29%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 0.5px solid black;
+        padding: 10px;
+    }
+    .button{
+        background-color: rgb(143, 133, 125);
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    .left{
+        float: left;
+    }
+    .right{
+        position: absolute;
+        left: 780px;
+    }
+    .footer{
+        background-color: rgb(92, 85, 82);
+        padding-top:20px;
+        height: 250px;
+        position: absolute;
+        top: 80%;
+        width: 1140px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .footer a{
+        text-decoration: none;
+    }
+    #first {
+        float:left; 
+                /* background-color: rgb(92, 85, 82); */
+        color: white;
+        width:30%;
+        text-align: center;
+        height:280px;
+    }
+    #second{
+        float:left; 
+                /* background-color: rgb(92, 85, 82); */
+        color: white;
+        width:30%;
+
+
+        text-align: center;
+        height:280px;
+        margin-left:20px;
+    }
+    #third{
+        color: white;
+        float:right;
+        text-align: center;
+                /* background-color: rgb(92, 85, 82); */
+        width:35%;
+        height:280px;
+    }
+    #first a{
+        text-decoration: none;
+        color: wheat;
+    }
+    #third a{
+        text-decoration: none;
+        color: wheat;
+    } 
+    #third a:hover , #first a:hover {
+        color: gray;
+    } 
+</style>
+
+<body>
+    <script>  
+        function validateform(){  
+        var name=document.form1.name.value;
+        var message=document.form1.message.value;    
+        if (name==null || name==""){  
+          alert("Name field is empty. Please enter your name");  
+          return false;  
+        }
+        else if (message==null || message==""){
+            alert("Message field is empty. Please enter your message");
+            return false;
+        }
+        }  
+        </script>
+    <div id="container">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="overview.html">About Us</a>
+            <a href="Menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="header">
+            <h3>Send us a Message!</h3>
+        </div><br><br>
+        
+        <div class="part">
+            <div class="left">
+                <div class="form">
+                    <form name="form1" method="GET" action="url" onsubmit="return validateform()">
+                        <table>
+                            <tr>
+                                <td><label for="name"> Your Name</label> </td>
+                                <td><input type="text" id="name" name="name" placeholder="Enter your Name" size="40"></td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                    <td><label for="email">Enter your email </label> </td>
+                                    <td><input type="email" id="email" name="email" placeholder="xxx@abc.com" size="40"></td>
+                                </tr>
+                                <tr>
+                                    <td style="height: 100px;"><label for="message">Message</label></td>
+                                    <td style="height: 100px;"><input type="text" name="message" size="40" style="height: 100px;"></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><input type="submit" class="button" value="Submit">
+                                    <input type="reset" class="button"></td>
+                                </tr>
+                        </table>
+                        </form>
+                </div>
+            </div>
+            <div class="right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.0947975054482!2d127.05125011482339!3d37.17421805425678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b47bc24982b15%3A0x896e037b0c3459dd!2sCafe%20Bless%20Roll!5e0!3m2!1sen!2snp!4v1628590558684!5m2!1sen!2snp" width="400" height="260" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div id="first">
+                <h4>Make a Booking</h4><hr>
+                <p>We hold tables for walk-in guests everyday. For groups over 6, events and private hire, please contact us <a href="contact.html">Here</a></p>
+                <br><br><br>
+                <a href="index.html">Home</a>
+            <a href="overview.html">About Us</a>
+            <a href="Menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            </div>
+            <div id="second">
+                <h4>Opening Times</h4><hr>
+                <p>Monday - Friday : 08:00 - 22:00</p><p>Saturday : 10:00 - 23:00</p><p>Sunday : 10:00 - 18:00</p>
+            </div>
+            <div id="third">
+                <h4>Contact Us</h4><hr>
+                
+                    <p>79-20 Sucheong-ro, Gyeonggi-do</p>
+                    <p>020 7866 7155</p>
+                    <p><a href="https://mail.google.com/">cafeblessroll@gmail.com</a></p>
+                    <p>Instagram <a href="https://www.instagram.com/cafeblessroll_official/?hl=en">@cafeblessroll_official </a></p>      
+            </div>
+            
+        </div>
+    </div>
+        
+    
+</body>
+</html>

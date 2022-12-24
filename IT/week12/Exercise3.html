@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+<script>
+    function mOver(){
+        document.getElementById("div").innerHTML="Mouse is over me";
+    }
+    function mOut(){
+        document.getElementById("div").innerHTML="Thank you "
+    }
+</script>
+</head>
+<body>
+<div id="div" onmouseover="mOver()" onmouseout="mOut()">Hover to change text</div>
+</body>
+</html>

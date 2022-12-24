@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #main{
+            width: 1140px;
+            min-height: 750px;
+            margin: auto auto;
+            background-color: gray;
+        }
+        body{
+            font-family: Arial;
+            padding: 10px;
+            
+        }
+        .header{
+            padding: 10px;
+            
+        }
+        .nav{
+            height: 100px;
+            overflow: hidden;
+            background-color:rgb(151, 146, 146);;
+        }
+        .nav a{
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav a:hover{
+            background-color:#ddd;
+            color: black;
+        }
+        .leftcolumn{
+            
+            width: 50%;
+            padding: 20px;
+            float:left;
+            
+        }
+        .rightcolumn{
+            float: left;
+            width: 50%;
+            padding: 20px;
+        }
+        .img{
+            float: left;
+            width: 150px;
+            height: 150px;
+            padding: 15px;
+        }
+        .map{
+            position: relative;
+            left: 600px;
+            top: -220px;
+        }
+        .card{
+            background-color:rgb(192, 189, 189);
+            padding: 10px;
+            margin-top: 20ox;
+            border: 1px black;
+            border-style: solid;
+            border-radius: 15px;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            padding: 20px;
+            margin-top: 20px;
+            height: 270px;
+        }
+        .site{
+            position: relative;
+        }
+        .site a{
+            color: black;
+            text-decoration: none;
+        }
+        .site a:hover{
+            color: gray;
+        }
+        .client{
+            position: relative;
+
+            left: 350px;
+            top: -170px;
+        }
+        .where{
+            position: relative;
+            float: right;
+            top: -445px;
+
+        }
+        
+        @media screen and (max-width:800px){
+            .leftcolumn, .rightcolumn{
+                width: 100%;
+                padding: 0;
+            }
+        }
+        @media screen and (max-width:400px){
+            .nav a{
+                float: none;
+                width:100%
+            }
+        }
+        </style>
+    </head>
+<body>
+        <div id="main">
+            <div class="nav">
+                <a href="$">Contact</a>
+                <a href="$">Who We Work With</a>
+                <a href="$">Services</a>
+                <a href="$">About Us</a>
+                <a href="$">Home</a>
+                </div><hr>
+            <div class="header">
+                <h2>Who We Work With</h2>
+            </div>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <div class="img"><img src="https://i.pinimg.com/originals/42/60/c7/4260c73bae5da8d12e6c57474d4a5606.jpg" alt="image" height="100" width="100"></div>
+                    <h3>Anemo</h3>
+                    <h4>Kaedehara Kazuha<hr color="black"></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quisquam, ut nesciunt veniam quae rem voluptatum deleniti? Fugit corrupti, perferendis.</p>
+                </div><br>
+                <div class="card">
+                    <div class="img"><img src="https://ih1.redbubble.net/image.1768661742.8022/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="image" height="100" width="100"></div>
+                    <h3>Pyro</h3>
+                    <h4>Bennett<hr color="black"></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quisquam, ut nesciunt veniam quae rem voluptatum deleniti? Fugit corrupti, perferendis.</p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <div class="img"><img src="https://ih1.redbubble.net/image.1784370502.4082/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="image" height="100" width="100"></div>
+                    <h3>Hydro</h3>
+                    <h4>Xingqiu<hr color="black"></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quisquam, ut nesciunt veniam quae rem voluptatum deleniti? Fugit corrupti, perferendis.</p>
+                </div><br>
+                <div class="card">
+                    <div class="img"><img src="https://i.pinimg.com/originals/e3/f5/b3/e3f5b3bd237d3e92688a0de620e329e0.jpg" alt="image" height="100" width="100"></div>
+                    <h3>Geo</h3>
+                    <h4>Zhongli<hr color="black"></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quisquam, ut nesciunt veniam quae rem voluptatum deleniti? Fugit corrupti, perferendis.</p>
+                </div>       
+            </div>
+        </div>
+        <hr>
+        <div class="footer">
+            <div class="site">
+                <h4>Site Map</h4><br>
+                <a href="$">Home</a><br>
+                <a href="$">About Us</a><br>
+                <a href="$">Services</a><br>
+                <a href="$">Who We Work With</a><br>
+                <a href="$">Contact Us</a>
+            </div>
+            <div class="client">
+                <h4>Client Testimonials</h4>
+                <p>Some text</p>
+            </div>
+            <div class="map"><img src="https://www.sketchappsources.com/resources/source-image/place_on_a_map_2x.png" alt="image" height="200" width="300"></div>
+            <div class="where">
+                <h4>Where are we?</h4>
+                Lorem, ipsum dolor,<br>12345,<br>Mondstadt<br>Mobile +123<br>info@ 
+
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Home Page</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+
+    }
+    body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+    #container{
+        width: 100%;
+        /* min-height: 800px; */
+        margin: auto auto;
+    }
+    /* body{
+        background-color: rgb(30, 30, 63);
+    } */
+    /* Slideshow container */
+
+    .nav{
+        overflow: hidden;
+        background-color:rgb(67, 54, 51);
+    }
+    .nav a{
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+    }
+    .nav a:hover{
+        color: rgb(143, 133, 125);
+    }
+    .image{
+        background-color: gray;
+    }
+    .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+    .footer{
+        background-color: rgb(92, 85, 82);
+        padding-top:20px;
+        height: 250px;
+        width: 1140px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    #first {
+        float:left; 
+                /* background-color: rgb(92, 85, 82); */
+        color: white;
+        width:30%;
+        text-align: center;
+        height:280px;
+    }
+    #second{
+        float:left; 
+                /* background-color: rgb(92, 85, 82); */
+        color: white;
+        width:30%;
+        text-align: center;
+        height:280px;
+        margin-left:20px;
+    }
+    #third{
+        color: white;
+        float:right;
+        text-align: center;
+                /* background-color: rgb(92, 85, 82); */
+        width:35%;
+        height:280px;
+    }
+    #first a{
+        text-decoration: none;
+        color: wheat;
+    }
+    #third a{
+        text-decoration: none;
+        color: wheat;
+    } 
+    #third a:hover , #first a:hover {
+        color: gray;
+    } 
+</style>
+
+<body>
+    
+    <div id="container">
+        <div class="nav">
+          <a href="index.html">Home</a>
+          <a href="overview.html">About Us</a>
+          <a href="Menu.html">Menu</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact Us</a>
+        </div><br>
+        <!-- https://i.pinimg.com/originals/ab/87/1f/ab871f1e4c804546cafc41294a254f7c.jpg -->
+        <!-- https://koreandramaland.com/wp-content/uploads/2019/06/a-teen-2-2019-filming-location-episode-10-cafe-bless-roll-wirye-koreandramaland-4.jpg -->
+        <!-- https://pbs.twimg.com/media/EhWg5QuWkAENVw5.jpg -->
+        <div class="header">
+          <h1 align="center">Welcome to cafe Bless Roll</h1>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="https://i.pinimg.com/originals/ab/87/1f/ab871f1e4c804546cafc41294a254f7c.jpg " style="width:100%">
+              
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="https://koreandramaland.com/wp-content/uploads/2019/06/a-teen-2-2019-filming-location-episode-10-cafe-bless-roll-wirye-koreandramaland-4.jpg" style="width:100%">
+              
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="https://pbs.twimg.com/media/EhWg5QuWkAENVw5.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+          <div class="footer">
+            <div id="first">
+                <h4>Make a Booking</h4><hr>
+                <p>We hold tables for walk-in guests everyday. For groups over 6, events and private hire, please contact us <a href="contact.html">Here</a></p>
+            </div>
+            <div id="second">
+                <h4>Opening Times</h4><hr>
+                <p>Monday - Friday : 08:00 - 22:00</p><p>Saturday : 10:00 - 23:00</p><p>Sunday : 10:00 - 18:00</p>
+            </div>
+            <div id="third">
+                <h4>Contact Us</h4><hr>
+                
+                    <p>79-20 Sucheong-ro, Gyeonggi-do</p>
+                    <p>020 7866 7155</p>
+                    <p><a href="https://mail.google.com/">cafeblessroll@gmail.com</a></p>
+                    <p>Send us a Message <a href="contact.html">Here!</a></p>
+                
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.0947975054482!2d127.05125011482339!3d37.17421805425678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b47bc24982b15%3A0x896e037b0c3459dd!2sCafe%20Bless%20Roll!5e0!3m2!1sen!2snp!4v1628590558684!5m2!1sen!2snp" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+               
+        </div>
+    </div>
+    
+</body>
+</html>

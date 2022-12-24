@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <form name="form" method="GET" action="url">
+        <table>
+            <caption><strong>HTML form Test</strong></caption>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" name="name" size="25"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><input type="text" name="address" size="25"></td>
+            </tr>
+            <!-- <tr>
+                <td><label for="dob">Enter uour DOB</label></td>
+                <td><input type="date" name="dob"></td>
+            </tr> -->
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" size="25"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td><input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hobbies">Hobbies</label></td>
+                <td><input type="checkbox" name="hobbies" value="Sports">Sports
+                    <input type="checkbox" name="hobbies" value="Movies">Movies
+                    <input type="checkbox" name="hobbies" value="Travelling">Travelling
+                </td>
+            </tr>
+            <tr>
+                <td>Select your counrty</td>
+                <td>
+                    <select name="country">
+                        <option value="sel">-select-</option>
+                        <option value="Np">Nepal</option>
+                        <option value="Bh">Bhutan</option>
+                        <option value="Bd">Bangladesh</option>
+                        <option value="In">India</option>
+                        <option value="Ch">China</option>
+                        <option value="other">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 100px;"><label for="message">Message</label></td>
+                <td style="height: 100px;"><input type="text" name="message" size="25" style="height: 100px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit">
+                <input type="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

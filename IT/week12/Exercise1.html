@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <p id="1"></p>
+    <script>
+            time= new Date();
+            let year=time.getFullYear();
+            let month=time.getMonth();
+            let day=time.getDate();
+            let hour=time.getHours();
+            let min=time.getMinutes();
+            let sec=time.getSeconds();
+        document.getElementById("1").innerHTML="Current Date: "+year+"-"+month+"-"+day+" "+hour+":"+min+":"+sec;
+        
+    </script>
+    
+</body>
+</html>

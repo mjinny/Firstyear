@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<style>
+		table, th, td{
+			border:1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<form name="form1" method="GET" action="url">
+<table>
+	<caption>Registration Form </caption>
+	<tr>
+		<th><label for="First Name"> Your First Name</label> </th>
+		<td><input type="text" id="First Name" name="First Name" placeholder="Enter your First Name" size="25"></td>
+	</tr>
+	<tr>
+		<th><label for="Last Name"> Your Last Name</label></th>
+		<td><input type="text" id="Lastt Name" name="Last Name" size="25"></td>
+	</tr>
+	<tr>
+			<th><label for="password">Enter your Password </label> </th>
+			<td><input type="password" id="password" name="password" size="25"></td>
+	</tr>
+	<tr>
+			<th><label for="password reenter">ReEnter your Password </label> </th>
+			<td><input type="password" id="password reenter name="password reenter" size="25"></td>
+	</tr>
+	<tr>
+			<th><label for="email">Enter your email </label> </th>
+			<td><input type="email" id="email" name="email" placeholder="xxx@abc.com" size="25"></td>
+		</tr>
+		<tr>
+			<th><label for="number">Enter your number</label></th>
+			<td><input type="text" id="number" name="number" size="25" maxlength="10"></td>
+		</tr>
+		<tr>
+			<th style="height: 100px;"><label for="address">Enter your address</label></th>
+			<td style="height: 100px;"><input type="text" id="address" name="address" size="25" style="height: 100px;"></td>
+		</tr>
+		<tr>
+			<th>Select your gender</th>
+			<td>
+				<input type="radio" id="Male" name="gender" value="Male">
+				<label for="Male">Male</label>
+				<input type="radio" id="Female" name="gender" value="Female">
+				<label for="Female">Female</label>
+			</td>
+		</tr>
+		<tr>
+			<th>Select your hobbies</th>
+			<td>
+				<input type="radio" id="hobby1" name="hobbies" value="hobby1">
+				<label for="hobby1">hobby1</label>
+				<input type="radio" id="hobby2" name="hobbies" value="hobby2">
+				<label for="hobby2">hobby2</label>
+				<input type="radio" id="hobby3" name="hobbies" value="hobby3">
+				<label for="hobby3">hobby3</label>
+			</td>
+		</tr>
+		<tr>
+			<th><label for="date">Enter your DOB</label></th>
+			<td><input type="date" id="date" name="dob"></td>
+		</tr>
+		<tr>
+			<th><label for="country">Enter your counrty</label></th>
+			<td>
+				<select id="country" name="country">
+					<option value="">Select your Country</option>
+					<option value="Np">Nepal</option>
+					<option value="Bh">Bhutan</option>
+					<option value="Bd">Bangladesh</option>
+					<option value="In">India</option>
+					<option value="Ch">China</option>
+					<option value="other">Others</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th><label for="file">Upload your pic</label></th>
+			<td><input type="file" id="file" name="file"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="submit" value="Save my data">
+			<input type="reset"></td>
+		</tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/*Make your CV using HTML CSS,  Index.html page should contain details about you (name age address etc) and your photo,  Contact.html page should have your contact details like phone, email, facebook and insta links. education.html should have details about your qualification, hobbies and interest should be in a separate html page. include menus with the links of all the pages you create*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    background-image: url("sakura.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.header{
+    height: 35px;
+}
+ul{
+    list-style-type: none;
+   
+    width: 13%;
+}
+li a{
+    font-size: 20px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+li a:hover{
+    border-radius: 25px;
+    background:rgba(102, 223, 223, 0.5);
+    color: rgb(8, 35, 124);
+    
+}
+
+.me{
+    font-size: 35px;
+    background:rgba(255, 255, 255, 0.678);
+    width: 45%;
+    
+    position: relative;
+    padding: 30px;
+    left: 350px;
+    top: -230px;
+    border-radius: 25px;
+    text-align: center;
+}
+.me2{
+    font-size: 30px;
+    background:rgba(255, 255, 255, 0.678);
+    width: 45%;
+    position: relative;
+    padding: 30px;
+    left: 350px;
+    top: -200px;
+    border-radius: 25px;
+    text-align: center;
+}
